@@ -9,31 +9,48 @@ public class Practice {
 
     }
 
-    public String reversePrefix(String s, int k) {
-        char[] arr = s.toCharArray();
-        int start = 0;
-        int end = k - 1;
+   public long maxMatrixSum(int[][] matrix) {
+        int n = matrix.length;
+        int m = matrix[0].length;
+        int count = 0;
+        long sum = 0;
+        int min = Integer.MAX_VALUE;
+        long result = 0;
 
-        while (start < end) {
-            char temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
-            start++;
-            end--;
-        }
-        return new String(arr);
-    }
-
-    public int repeatedNTimes(int[] nums) {
-        HashSet<Integer> set = new HashSet<>();
-        for (int num : nums) {
-            if (!set.contains(num)) {
-                set.add(num);
-            } else {
-                return num;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                min = Math.min(min, Math.abs(matrix[i][j]));
+                if (matrix[i][j] < 0) {
+                    sum += Math.abs(matrix[i][j]);
+                    matrix[i][j] = Math.abs(matrix[i][j]);
+                    count++;
+                } else {
+                    sum += matrix[i][j];
+                }
             }
         }
-        return 0;
+        if (count % 2 == 0) {
+            return sum;
+        } else {
+            boolean flipped = false;
+
+            for (int i = 0; i < n && !flipped; i++) {
+                for (int j = 0; j < m; j++) {
+                    if (matrix[i][j] == min) {
+                        matrix[i][j] = -matrix[i][j];
+                        flipped = true;
+                        break;
+                    }
+                }
+            }
+
+            for (int i = 0; i < n; i++) {
+                for (int j = 0; j < m; j++) {
+                    result += matrix[i][j];
+                }
+            }
+        }
+        return result;
     }
 
 }

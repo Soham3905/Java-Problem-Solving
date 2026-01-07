@@ -9,48 +9,62 @@ public class Practice {
 
     }
 
-   public long maxMatrixSum(int[][] matrix) {
-        int n = matrix.length;
-        int m = matrix[0].length;
-        int count = 0;
-        long sum = 0;
-        int min = Integer.MAX_VALUE;
-        long result = 0;
-
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                min = Math.min(min, Math.abs(matrix[i][j]));
-                if (matrix[i][j] < 0) {
-                    sum += Math.abs(matrix[i][j]);
-                    matrix[i][j] = Math.abs(matrix[i][j]);
-                    count++;
-                } else {
-                    sum += matrix[i][j];
-                }
-            }
-        }
-        if (count % 2 == 0) {
-            return sum;
-        } else {
-            boolean flipped = false;
-
-            for (int i = 0; i < n && !flipped; i++) {
-                for (int j = 0; j < m; j++) {
-                    if (matrix[i][j] == min) {
-                        matrix[i][j] = -matrix[i][j];
-                        flipped = true;
-                        break;
-                    }
-                }
-            }
-
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < m; j++) {
-                    result += matrix[i][j];
-                }
+    public int maxWidthOfVerticalArea(int[][] points) {
+        int n = points.length;
+        Arrays.sort(points, (a, b) -> Integer.compare(a[0], b[0]));
+        int result = Integer.MIN_VALUE;
+        for (int i = 1; i < n; i++) {
+            int diff = points[i][0] - points[i - 1][0];
+            if (result < diff) {
+                result = diff;
             }
         }
         return result;
     }
 
+    public class TreeNode {
+
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode() {
+        }
+
+        TreeNode(int val) {
+            this.val = val;
+        }
+
+        TreeNode(int val, TreeNode left, TreeNode right) {
+            this.val = val;
+            this.left = left;
+            this.right = right;
+        }
+    }
+
+    long max = Integer.MIN_VALUE;
+
+    public int maxProduct(TreeNode root) {
+        int sum = treeSum(root);
+        dfs(root,sum);
+        return (int)(max % 1_000_000_007);
+    }
+
+    public long dfs(TreeNode root,int sum) {
+        if (root==null) {
+            return 0;
+        }
+        long left = dfs(root.left,sum);
+        long right = dfs(root.right,sum);
+        long currSum = left + right + root.val;
+        max = Math.max((sum - currSum) * currSum, max);
+        return currSum;
+    }
+
+    public int treeSum(TreeNode root) {
+       if (root == null) {
+           return 0;
+       }
+       return root.val + treeSum(root.left) + treeSum(root.right);
+    }
 }

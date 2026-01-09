@@ -9,19 +9,6 @@ public class Practice {
 
     }
 
-    public int maxWidthOfVerticalArea(int[][] points) {
-        int n = points.length;
-        Arrays.sort(points, (a, b) -> Integer.compare(a[0], b[0]));
-        int result = Integer.MIN_VALUE;
-        for (int i = 1; i < n; i++) {
-            int diff = points[i][0] - points[i - 1][0];
-            if (result < diff) {
-                result = diff;
-            }
-        }
-        return result;
-    }
-
     public class TreeNode {
 
         int val;
@@ -67,4 +54,38 @@ public class Practice {
        }
        return root.val + treeSum(root.left) + treeSum(root.right);
     }
+
+    class Pair{
+
+        TreeNode node;
+        int depth;
+
+        public Pair(TreeNode node,int depth) {
+            this.node = node;
+            this.depth = depth;
+        }
+        
+    }
+
+    public TreeNode subtreeWithAllDeepest(TreeNode root) {
+       return helper(root).node;
+    }
+
+    public Pair helper(TreeNode root){
+        if(root == null){
+            return new Pair(root,0);
+        }
+
+        Pair left = helper(root.left);
+        Pair right = helper(root.right);
+
+        if (left.depth == right.depth) {
+            return new Pair(root, left.depth+1);
+        }else if (left.depth > right.depth) {
+            return new Pair(root, left.depth+1);
+        }else {
+            return new Pair(root.right, right.depth+1);
+        }
+    }
+
 }

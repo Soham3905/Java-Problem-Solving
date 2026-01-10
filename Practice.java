@@ -9,83 +9,72 @@ public class Practice {
 
     }
 
-    public class TreeNode {
+    class Solution {
+    public int minimumDeleteSum(String s1, String s2) {
+        int n = s1.length();
+        int m = s2.length();
 
-        int val;
-        TreeNode left;
-        TreeNode right;
+        int[][] dp = new int[n + 1][m + 1];
 
-        TreeNode() {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= m; j++) {
+                if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j - 1] + s1.charAt(i - 1);
+                } else {
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
+                }
+            }
         }
 
-        TreeNode(int val) {
-            this.val = val;
+        int i = n, j = m;
+        String lcs = "";
+
+        while (i > 0 && j > 0) {
+            if (s1.charAt(i - 1) == s2.charAt(j - 1)) {
+                lcs = s1.charAt(i - 1) + lcs;
+                i--;
+                j--;
+            } else if (dp[i - 1][j] > dp[i][j - 1]) {
+                i--;
+            } else {
+                j--;
+            }
         }
 
-        TreeNode(int val, TreeNode left, TreeNode right) {
-            this.val = val;
-            this.left = left;
-            this.right = right;
+        int sum = 0;
+        int p = 0, q = 0;
+
+        while (p < n && q < lcs.length()) {
+            if (s1.charAt(p) == lcs.charAt(q)) {
+                p++;
+                q++;
+            } else {
+                sum += s1.charAt(p);
+                p++;
+            }
         }
-    }
-
-    long max = Integer.MIN_VALUE;
-
-    public int maxProduct(TreeNode root) {
-        int sum = treeSum(root);
-        dfs(root,sum);
-        return (int)(max % 1_000_000_007);
-    }
-
-    public long dfs(TreeNode root,int sum) {
-        if (root==null) {
-            return 0;
-        }
-        long left = dfs(root.left,sum);
-        long right = dfs(root.right,sum);
-        long currSum = left + right + root.val;
-        max = Math.max((sum - currSum) * currSum, max);
-        return currSum;
-    }
-
-    public int treeSum(TreeNode root) {
-       if (root == null) {
-           return 0;
-       }
-       return root.val + treeSum(root.left) + treeSum(root.right);
-    }
-
-    class Pair{
-
-        TreeNode node;
-        int depth;
-
-        public Pair(TreeNode node,int depth) {
-            this.node = node;
-            this.depth = depth;
-        }
-        
-    }
-
-    public TreeNode subtreeWithAllDeepest(TreeNode root) {
-       return helper(root).node;
-    }
-
-    public Pair helper(TreeNode root){
-        if(root == null){
-            return new Pair(root,0);
+        while (p < n) {
+            sum += s1.charAt(p++);
         }
 
-        Pair left = helper(root.left);
-        Pair right = helper(root.right);
+        int r = 0, s = 0;
 
-        if (left.depth == right.depth) {
-            return new Pair(root, left.depth+1);
-        }else if (left.depth > right.depth) {
-            return new Pair(root, left.depth+1);
-        }else {
-            return new Pair(root.right, right.depth+1);
+        while (r < m && s < lcs.length()) {
+            if (s2.charAt(r) == lcs.charAt(s)) {
+                r++;
+                s++;
+            } else {
+                sum += s2.charAt(r);
+                r++;
+            }
         }
+        while (r < m) {
+            sum += s2.charAt(r++);
+        }
+
+        return sum;
     }
+}
+
 
 }

@@ -9,20 +9,34 @@ public class Practice {
 
     }
 
-    public int[] minBitwiseArray(List<Integer> nums) {
-        int n = nums.size();
-        int[] ans = new int[n];
-        for (int i = 0; i < n; i++) {
-            int ele = nums.get(i);
-            for (int j = 0; j < ele; j++) {
-                if ((j | (j + 1))==nums.get(i)) {
-                    ans[i] = j;
-                    break;
+   public boolean isSorted(int[] nums,int n) {
+        for (int i = 1; i < n; i++) {
+            if (nums[i] < nums[i - 1]) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public int minimumPairRemoval(int[] nums) {
+        int n = nums.length;
+        int ans = 0;
+        while (!isSorted(nums,n)) {
+            ans++;
+            int min = Integer.MAX_VALUE;
+            int pos = -1;
+            for (int j = 1; j < n; j++) {
+                int sum = nums[j] + nums[j - 1];
+                if (min > sum) {
+                    min = sum;
+                    pos = j;
                 }
             }
-            if (ans[i]==0) {
-                ans[i] = -1;
+            nums[pos - 1] = min;
+            for (int k = pos; k < n - 1; k++) {
+                nums[k] = nums[k + 1];
             }
+            n--;
         }
         return ans;
     }

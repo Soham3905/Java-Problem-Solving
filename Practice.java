@@ -9,36 +9,52 @@ public class Practice {
 
     }
 
-   public boolean isSorted(int[] nums,int n) {
-        for (int i = 1; i < n; i++) {
-            if (nums[i] < nums[i - 1]) {
-                return false;
+    public String reverseByType(String s) {
+        Stack<Character> stack1 = new Stack<>();
+        Stack<Character> stack2 = new Stack<>();
+        for (char ch : s.toCharArray()) {
+            if (Character.isLowerCase(ch)) {
+                stack1.push(ch);
+            } else {
+                stack2.push(ch);
             }
         }
-        return true;
+        StringBuilder sb = new StringBuilder();
+        for (char ch : s.toCharArray()) {
+            if (Character.isLowerCase(ch)) {
+                sb.append(stack1.pop());
+            } else {
+                sb.append(stack2.pop());
+            }
+        }
+        return sb.toString();
     }
 
-    public int minimumPairRemoval(int[] nums) {
+    public int minimumK(int[] nums) {
         int n = nums.length;
-        int ans = 0;
-        while (!isSorted(nums,n)) {
-            ans++;
-            int min = Integer.MAX_VALUE;
-            int pos = -1;
-            for (int j = 1; j < n; j++) {
-                int sum = nums[j] + nums[j - 1];
-                if (min > sum) {
-                    min = sum;
-                    pos = j;
-                }
-            }
-            nums[pos - 1] = min;
-            for (int k = pos; k < n - 1; k++) {
-                nums[k] = nums[k + 1];
-            }
-            n--;
+        int result = -1;
+        int max = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i++) {
+            max = Math.max(max, nums[i]);
         }
-        return ans;
+
+        int start = 1;
+        int end = max;
+
+        while (start <= end) {
+            int mid = start + (end - start) / 2;
+            long count = 0;
+            for (int ele : nums) {
+                count += Math.ceil(ele / mid);
+            }
+            if (count <= (long) mid * mid) {
+                result = mid;
+                end = mid - 1;
+            } else {
+                start = mid + 1;
+            }
+        }
+        return result;
     }
 
 }

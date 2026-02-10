@@ -9,46 +9,39 @@ public class Practice {
 
     }
 
-  public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode() {}
-      TreeNode(int val) { this.val = val; }
-      TreeNode(int val, TreeNode left, TreeNode right) {
-          this.val = val;
-          this.left = left;
-          this.right = right;
-      }
-  }
-class Solution {
-    public TreeNode balanceBST(TreeNode root) {
-        ArrayList<Integer> list = new ArrayList<>();
-        inOrder(root,list);
-        return solve(0,list.size()-1,root,list);
-    }
+    // public int[] maxSlidingWindow(int[] nums, int k) {
+    //     int n = nums.length;
+    //     int[] result = new int[n];
+    //     for (int i = 0; i <= n - k; i++) {
+    //         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
+    //         for (int j = i; j < i + k; j++) {
+    //             pq.add(nums[j]);
+    //         }
+    //         result[i] = pq.poll();
+    //     }
+    //     return result;
+    // }
+    
+    public int[] maxSlidingWindow(int[] nums, int k) {
+        int n = nums.length;
+        int[] result = new int[n - k + 1];
+        Deque<Integer> dq = new LinkedList<>();
+        for (int i = 0; i < n; i++) {
 
-    public TreeNode solve(int left, int right, TreeNode root,ArrayList<Integer> list){
-        if (left > right) {
-            return null;
+            while (!dq.isEmpty() && dq.getFirst() <= i - k) {
+                dq.removeFirst();
+            }
+
+            while (!dq.isEmpty() && nums[i] > nums[dq.getLast()]) {
+                dq.removeLast();
+            }
+
+            dq.addLast(i);
+
+            if (i >= k-1) {
+                result[i-(k-1)] = nums[dq.getFirst()];
+            }
         }
-        int mid = left + (right-left)/2;
-        TreeNode node = new TreeNode(list.get(mid));
-        node.left = solve(left, mid-1, root, list);
-        node.right = solve(mid+1, right, root, list);
-        return node;
+        return result;
     }
-
-    public void inOrder(TreeNode root, ArrayList<Integer> list){
-        if(root == null){
-            return;
-        }
-
-        inOrder(root.left, list);
-        list.add(root.val);
-        inOrder(root.right, list);
-    }
-
-}
-
 }

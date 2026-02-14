@@ -9,39 +9,36 @@ public class Practice {
 
     }
 
-    // public int[] maxSlidingWindow(int[] nums, int k) {
-    //     int n = nums.length;
-    //     int[] result = new int[n];
-    //     for (int i = 0; i <= n - k; i++) {
-    //         PriorityQueue<Integer> pq = new PriorityQueue<>(Collections.reverseOrder());
-    //         for (int j = i; j < i + k; j++) {
-    //             pq.add(nums[j]);
-    //         }
-    //         result[i] = pq.poll();
-    //     }
-    //     return result;
-    // }
-    
-    public int[] maxSlidingWindow(int[] nums, int k) {
-        int n = nums.length;
-        int[] result = new int[n - k + 1];
-        Deque<Integer> dq = new LinkedList<>();
-        for (int i = 0; i < n; i++) {
-
-            while (!dq.isEmpty() && dq.getFirst() <= i - k) {
-                dq.removeFirst();
-            }
-
-            while (!dq.isEmpty() && nums[i] > nums[dq.getLast()]) {
-                dq.removeLast();
-            }
-
-            dq.addLast(i);
-
-            if (i >= k-1) {
-                result[i-(k-1)] = nums[dq.getFirst()];
+    public double champagneTower(int poured, int query_row, int query_glass) {
+        double[][] dp = new double[102][102];
+        for (int i = 0; i < 102; i++) {
+            for (int j = 0; j < 102; j++) {
+                dp[i][j] = -1;
             }
         }
-        return result;
+        double ans = helper(dp, poured, query_row, query_glass);
+        return Math.min(ans, 1);
     }
+
+    public double helper(double[][] dp, int poured, int i, int j) {
+        if (i < 0 || j < 0 || i < j) {
+            return 0.0;
+        }
+        if (i == 0 && j == 0) {
+            return poured;
+        }
+        if (dp[i][j] != -1) {
+            return dp[i][j];
+        }
+        double leftUp = (helper(dp, poured, i - 1, j - 1) - 1) / 2.0;
+        double rightUp = (helper(dp, poured, i - 1, j) - 1) / 2.0;
+        if (leftUp < 0) {
+            leftUp = 0.0;
+        }
+        if (rightUp < 0) {
+            rightUp = 0.0;
+        }
+        return dp[i][j] = leftUp + rightUp;
+    }
+
 }

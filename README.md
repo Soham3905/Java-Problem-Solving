@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3739-count-subarrays-with-majority-element-ii) |
 ## Hash Table
 |  |
@@ -52,10 +53,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
 ## Heap (Priority Queue)
 |  |
 | ------- |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
 ## Matrix
 |  |
 | ------- |
@@ -64,4 +67,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3286-find-a-safe-walk-through-a-grid) |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
+## Binary Search
+|  |
+| ------- |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
+## Dynamic Programming
+|  |
+| ------- |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
+## Topological Sort
+|  |
+| ------- |
+| [3620-network-recovery-pathways](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3620-network-recovery-pathways) |
 <!---LeetCode Topics End-->

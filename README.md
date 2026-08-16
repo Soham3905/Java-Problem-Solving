@@ -12,6 +12,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3286-find-a-safe-walk-through-a-grid) |
@@ -58,6 +59,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3348-smallest-divisible-digit-product-ii) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3534-path-existence-queries-in-a-graph-ii) |
@@ -164,6 +166,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1979-find-greatest-common-divisor-of-array) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
 | [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3345-smallest-divisible-digit-product-i) |
@@ -205,6 +208,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Counting
 |  |
 | ------- |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
 | [3518-smallest-palindromic-rearrangement-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3518-smallest-palindromic-rearrangement-ii) |
 ## Stack
@@ -225,6 +229,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0877-stone-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0877-stone-game) |
 | [1406-stone-game-iii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 ## Backtracking
 |  |
 | ------- |
@@ -233,10 +238,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 ## Nim Game
 |  |
 | ------- |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 ## Sprague–Grundy Theorem
 |  |
 | ------- |
@@ -245,4 +252,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
+| [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 <!---LeetCode Topics End-->

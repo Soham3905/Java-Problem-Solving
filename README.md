@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0628-maximum-product-of-three-numbers) |
 | [0877-stone-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0877-stone-game) |
 | [1331-rank-transform-of-an-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1331-rank-transform-of-an-array) |
@@ -55,12 +56,14 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Prefix Sum
 |  |
 | ------- |
+| [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3739-count-subarrays-with-majority-element-ii) |
 | [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
 ## Greedy
 |  |
 | ------- |
+| [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1386-cinema-seat-allocation](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1386-cinema-seat-allocation) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
@@ -133,6 +136,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Binary Search
 |  |
 | ------- |
+| [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3532-path-existence-queries-in-a-graph-i) |
 | [3534-path-existence-queries-in-a-graph-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3534-path-existence-queries-in-a-graph-ii) |
@@ -140,6 +144,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
 | [0877-stone-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0877-stone-game) |
 | [1406-stone-game-iii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |

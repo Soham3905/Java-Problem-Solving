@@ -67,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1386-cinema-seat-allocation](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1386-cinema-seat-allocation) |
 | [1846-maximum-element-after-decreasing-and-rearranging](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1846-maximum-element-after-decreasing-and-rearranging) |
+| [1927-sum-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3348-smallest-divisible-digit-product-ii) |
@@ -87,6 +88,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1358-number-of-substrings-containing-all-three-characters) |
+| [1927-sum-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1927-sum-game) |
 | [1967-number-of-strings-that-appear-as-substrings-in-word](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1967-number-of-strings-that-appear-as-substrings-in-word) |
 | [3090-maximum-length-substring-with-two-occurrences](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3090-maximum-length-substring-with-two-occurrences) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -177,6 +179,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1563-stone-game-v) |
+| [1927-sum-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1927-sum-game) |
 | [1979-find-greatest-common-divisor-of-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1979-find-greatest-common-divisor-of-array) |
 | [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
@@ -244,6 +247,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1510-stone-game-iv) |
 | [1563-stone-game-v](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1563-stone-game-v) |
+| [1927-sum-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2029-stone-game-ix) |
 ## Backtracking
 |  |

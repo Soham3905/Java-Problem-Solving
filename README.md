@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
+| [0560-subarray-sum-equals-k](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0560-subarray-sum-equals-k) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0628-maximum-product-of-three-numbers) |
 | [0877-stone-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0877-stone-game) |
 | [1331-rank-transform-of-an-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1331-rank-transform-of-an-array) |
@@ -37,6 +38,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0560-subarray-sum-equals-k](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0560-subarray-sum-equals-k) |
 | [1331-rank-transform-of-an-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1331-rank-transform-of-an-array) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1358-number-of-substrings-containing-all-three-characters) |
 | [1386-cinema-seat-allocation](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1386-cinema-seat-allocation) |
@@ -65,6 +67,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
+| [0560-subarray-sum-equals-k](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0560-subarray-sum-equals-k) |
 | [1872-stone-game-viii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1872-stone-game-viii) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
 | [3739-count-subarrays-with-majority-element-ii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3739-count-subarrays-with-majority-element-ii) |

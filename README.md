@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0128-longest-consecutive-sequence) |
 | [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
+| [0523-continuous-subarray-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0560-subarray-sum-equals-k) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0628-maximum-product-of-three-numbers) |
 | [0877-stone-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0877-stone-game) |
@@ -40,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0128-longest-consecutive-sequence](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0128-longest-consecutive-sequence) |
+| [0523-continuous-subarray-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0560-subarray-sum-equals-k) |
 | [1331-rank-transform-of-an-array](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1331-rank-transform-of-an-array) |
 | [1358-number-of-substrings-containing-all-three-characters](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1358-number-of-substrings-containing-all-three-characters) |
@@ -69,6 +71,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0410-split-array-largest-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0410-split-array-largest-sum) |
+| [0523-continuous-subarray-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0523-continuous-subarray-sum) |
 | [0560-subarray-sum-equals-k](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0560-subarray-sum-equals-k) |
 | [1872-stone-game-viii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1872-stone-game-viii) |
 | [3312-sorted-gcd-pair-queries](https://github.com/Soham3905/Java-Problem-Solving/tree/master/3312-sorted-gcd-pair-queries) |
@@ -197,6 +200,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Math
 |  |
 | ------- |
+| [0523-continuous-subarray-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0523-continuous-subarray-sum) |
 | [0628-maximum-product-of-three-numbers](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0628-maximum-product-of-three-numbers) |
 | [0877-stone-game](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0877-stone-game) |
 | [1406-stone-game-iii](https://github.com/Soham3905/Java-Problem-Solving/tree/master/1406-stone-game-iii) |
@@ -310,4 +314,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points](https://github.com/Soham3905/Java-Problem-Solving/tree/master/2058-find-the-minimum-and-maximum-number-of-nodes-between-critical-points) |
+## Pigeonhole Principle
+|  |
+| ------- |
+| [0523-continuous-subarray-sum](https://github.com/Soham3905/Java-Problem-Solving/tree/master/0523-continuous-subarray-sum) |
 <!---LeetCode Topics End-->
